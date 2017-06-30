@@ -2,8 +2,9 @@
 
 """Tests for modemscraper.parser package with cases from the signals page."""
 
-from modemscraper import parser
 import pytest
+
+from modemscraper import parser
 
 
 class TestInvalid:
