@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
+"""The parser module parses raw units into machine-usable values.
 
+It is a specialized module for the units found on a modem's status page. As
+such, it does not act as a generalized parser.
 """
-The parser module parses raw units from the modem's pages and converts them
-into machine-usable values.
-"""
+
 import pint
 
 
@@ -11,8 +12,7 @@ _unit_registry = None  # scope the default unit registry
 
 
 def parse(to_parse):
-    """
-    parse parses unit values from Surfboard pages into a tuple.
+    """Parse unit values from Surfboard pages.
 
     Currently, parse supports:
 
@@ -23,16 +23,19 @@ def parse(to_parse):
     * symbol rates expressed in Sym/sec
 
     Args:
-        to_parse (TYPE): Description
+        to_parse (str): A string containing a unit to be parsed.
 
     Returns:
-        tuple: A tuple containing ()
+        tuple: A tuple containing (parsed magnitude, parsed unit type). For
+        example:
+
+        (1000000, 'hertz')
 
     Raises:
         TypeError: if the value given is not a string.
         ValueError: if the value given is not known to the parser.
-    """
 
+    """
     if not isinstance(to_parse, str):
         raise TypeError("input must be a string")
 

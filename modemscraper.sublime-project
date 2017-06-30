@@ -1,0 +1,17 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+
+    "settings": {
+        "@python": 3,
+        "python_interpreter": "/Users/michael/.virtualenvs/modemscraper/bin/python",
+
+        "python_package_paths": [
+            "$project_path"
+        ]
+    }
+}
