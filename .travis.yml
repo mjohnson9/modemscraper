@@ -7,7 +7,7 @@ deploy:
   on:
     tags: true
 
-install: pip install -U tox-travis
+install: pip install -U tox-travis coveralls
 language: python
 python:
 - 3.6
@@ -16,3 +16,5 @@ python:
 - 3.3
 - 2.7
 script: tox
+after_success:
+    - coveralls
