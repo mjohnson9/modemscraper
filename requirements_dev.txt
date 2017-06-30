@@ -10,3 +10,4 @@ cryptography==1.9
 PyYAML==3.12
 pytest==3.1.2
 pytest-runner==2.11.1
+httmock==1.2.6
