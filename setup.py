@@ -12,7 +12,9 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 requirements = [
-    # TODO: put package requirements here
+    'beautifulsoup4',
+    'Pint',
+    'requests'
 ]
 
 setup_requirements = [
@@ -23,12 +25,13 @@ setup_requirements = [
 
 test_requirements = [
     'pytest',
-    # TODO: put package test requirements here
+    'pytest-cov',
+    'httmock'
 ]
 
 setup(
     name='modemscraper',
-    version='0.1.0',
+    version='0.2.0',
     description="Modem scraper retrieves important information from Surfboard-like modem status pages.",
     long_description=readme + '\n\n' + history,
     author="Michael Johnson",
