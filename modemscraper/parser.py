@@ -46,7 +46,10 @@ def parse(to_parse):
     if isinstance(parsed, int):
         return (parsed, 'integer')
 
-    parsed = parsed.to_base_units()
+    if format(parsed.units) != "hertz":
+        # we check that the unit isn't hertz because our spec calls for hertz
+        # being returned as such
+        parsed.ito_base_units()  # convert to base units in place
 
     return (parsed.magnitude, '%s' % parsed.units)
 
@@ -66,7 +69,7 @@ def _get_unit_registry():
     _unit_registry.define("dBmV = []")
 
     # our prefixes
-    _unit_registry.define("M- = 1000000")
+    _unit_registry.define("mega- = 1000000 = M-")
 
     return _unit_registry
 

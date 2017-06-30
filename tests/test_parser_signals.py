@@ -20,8 +20,8 @@ def test_parse_bare_int():
 
 
 def test_parse_frequency():
-    assert parser.parse('639000000 Hz') == (639000000, '1 / second')
-    assert parser.parse('603000000 Hz') == (603000000, '1 / second')
+    assert parser.parse('639000000 Hz') == (639000000, 'hertz')
+    assert parser.parse('603000000 Hz') == (603000000, 'hertz')
 
 
 def test_parse_snr():
