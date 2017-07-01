@@ -37,7 +37,7 @@ def parse(to_parse):
 
     """
     if not isinstance(to_parse, str):
-        raise TypeError("input must be a string")
+        raise TypeError('input must be a string')
 
     parsed = None
 
@@ -49,7 +49,7 @@ def parse(to_parse):
     if isinstance(parsed, int):
         return (parsed, 'integer')
 
-    if format(parsed.units) != "hertz":
+    if format(parsed.units) != 'hertz':
         # we check that the unit isn't hertz because our spec calls for hertz
         # being returned as such
         parsed.ito_base_units()  # convert to base units in place
@@ -62,17 +62,17 @@ def _get_unit_registry():
     _unit_registry = pint.UnitRegistry(filename=None)
 
     # units from Pint's own defaults
-    _unit_registry.define("second = [time] = s = sec")
-    _unit_registry.define("[frequency] = 1 / [time]")
-    _unit_registry.define("hertz = 1 / second = Hz")
+    _unit_registry.define('second = [time] = s = sec')
+    _unit_registry.define('[frequency] = 1 / [time]')
+    _unit_registry.define('hertz = 1 / second = Hz')
 
     # our own units
-    _unit_registry.define("symbol = [] = sym")
-    _unit_registry.define("decibel = [] = dB")
-    _unit_registry.define("dBmV = []")
+    _unit_registry.define('symbol = [] = sym')
+    _unit_registry.define('decibel = [] = dB')
+    _unit_registry.define('dBmV = []')
 
     # our prefixes
-    _unit_registry.define("mega- = 1000000 = M-")
+    _unit_registry.define('mega- = 1000000 = M-')
 
     return _unit_registry
 
