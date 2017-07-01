@@ -1,3 +1,0 @@
-beautifulsoup4==4.6.0
-Pint==0.8.1
-requests==2.18.1
