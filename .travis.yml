@@ -8,14 +8,16 @@ deploy:
     tags: true
     python: '3.6'
 
-install: pip install -U tox-travis coveralls
 language: python
+cache: pip
 python:
 - 3.6
 - 3.5
 - 3.4
 - 3.3
 - 2.7
+
+install: pip install -U tox-travis coveralls
 script: tox
 after_success:
     - coveralls
