@@ -35,9 +35,7 @@ requirements = [
 ]
 
 setup_requirements = [
-    'pytest-runner',
-    # TODO(nightexcessive): put setup requirements (distutils extensions,
-    # etc.) here
+    'pytest-runner'
 ]
 
 test_requirements = [
