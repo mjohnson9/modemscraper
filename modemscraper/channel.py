@@ -26,7 +26,7 @@ class Channel:
 
     Attributes:
         frequency (int): This channel's frequency in Hertz.
-        id (int): This channel's DOCSIS channel ID.
+        channel_id (int): This channel's DOCSIS channel ID.
         power (float): This channel's power level in dBmV.
 
     """
@@ -39,7 +39,7 @@ class Channel:
             frequency (int): This channel's frequency in Hertz.
             power (float): This channel's power level in dBmV.
         """
-        self.id = channel_id
+        self.channel_id = channel_id
         self.frequency = frequency
         self.power = power
 
