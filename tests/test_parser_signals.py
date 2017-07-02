@@ -42,7 +42,7 @@ class TestDownstream:
 
     def test_parse_bare_int(self):
         """Test simple integers."""
-        assert parser.parse('15') == (15, 'integer')
+        assert parser.parse('15') == (15, 'bare')
 
     def test_parse_frequency(self):
         """Test frequencies measured in Hertz."""
@@ -60,8 +60,8 @@ class TestDownstream:
 
     def test_parse_power_level(self):
         """Test downstream power levels measured in dBmV."""
-        assert parser.parse('7 dBmV') == (7, 'dBmV')
-        assert parser.parse('-7 dBmV') == (-7, 'dBmV')
+        assert parser.parse('7 dBmV') == (7, 'decibel-millivolt')
+        assert parser.parse('-7 dBmV') == (-7, 'decibel-millivolt')
 
 
 class TestUpstream:
