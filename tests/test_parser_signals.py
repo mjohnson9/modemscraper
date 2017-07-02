@@ -40,7 +40,7 @@ class TestInvalid:
 class TestDownstream:
     """Tests for the downstream portion of the page."""
 
-    def test_parse_bare_int(self):
+    def test_parse_channel_id(self):
         """Test simple integers."""
         assert parser.parse('15') == (15, 'bare')
 
