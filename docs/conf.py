@@ -1,6 +1,24 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
+# Copyright (C) 2017 Michael Johnson
 #
+# This file is part of modemscraper.
+#
+# modemscraper is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# modemscraper is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with modemscraper.  If not, see <http://www.gnu.org/licenses/>.
+
+
 # modemscraper documentation build configuration file, created by
 # sphinx-quickstart on Tue Jul  9 22:26:36 2013.
 #
@@ -40,7 +58,7 @@ import modemscraper
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.autodoc', 'sphinx.ext.viewcode']
+extensions = ['sphinx.ext.autodoc', 'sphinx.ext.napoleon', 'sphinx.ext.viewcode']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

@@ -22,7 +22,9 @@ Modem Scraper
      :alt: Updates
 
 
-Modem scraper retrieves important information from Surfboard-like modem status pages.
+Modem scraper retrieves important information from Surfboard-like modem status pages. I developed this so that I could write a Zabbix agent to monitor the status of my Charter SB6141 modem.
+
+So far, it has been tested on the SB6141 running Charter Communication's firmware. If you would like to contribute your modem's status pages for addition, please open an issue.
 
 
 * Free software: GNU General Public License v3
@@ -32,5 +34,9 @@ Modem scraper retrieves important information from Surfboard-like modem status p
 Features
 --------
 
-* TODO
+Modem scraper can fetch information from a supported modem's status page, including:
+
+* operational status
+* channel statistics, both upstream and downstream
+* logs
 
