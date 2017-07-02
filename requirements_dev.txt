@@ -3,11 +3,7 @@
 bumpversion==0.5.3
 coverage==4.4.1
 cryptography==1.9
-flake8-builtins==0.4
-flake8-docstrings==1.1.0
-flake8-import-order==0.12
-flake8-quotes==0.11.0
-flake8==3.3.0
+pylint==1.7.2
 httmock==1.2.6
 mccabe==0.6.1
 pep8-naming==0.4.1
