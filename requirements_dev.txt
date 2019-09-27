@@ -2,7 +2,7 @@
 
 bumpversion==0.5.3
 coverage==4.4.1
-cryptography==1.9
+cryptography==2.3
 pylint==1.7.2
 httmock==1.2.6
 mccabe==0.6.1
