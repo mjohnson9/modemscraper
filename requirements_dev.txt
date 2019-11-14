@@ -3,7 +3,7 @@
 bumpversion==0.5.3
 coverage==4.4.1
 cryptography==1.9
-pylint==1.7.2
+pylint==2.4.4
 httmock==1.2.6
 mccabe==0.6.1
 pep8-naming==0.4.1
