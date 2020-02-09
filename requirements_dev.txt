@@ -14,5 +14,5 @@ pytest==3.1.2
 PyYAML==3.12
 Sphinx==1.6.3
 tox==2.7.0
-watchdog==0.8.3
+watchdog==0.10.2
 wheel==0.29.0
