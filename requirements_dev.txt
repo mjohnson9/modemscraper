@@ -10,7 +10,7 @@ pep8-naming==0.4.1
 pip==9.0.1
 pytest-cov==2.5.1
 pytest-runner==2.11.1
-pytest==3.1.2
+pytest==5.4.1
 PyYAML==3.12
 Sphinx==1.6.3
 tox==2.7.0
