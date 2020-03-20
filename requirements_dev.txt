@@ -6,7 +6,7 @@ cryptography==1.9
 pylint==1.7.2
 httmock==1.2.6
 mccabe==0.6.1
-pep8-naming==0.4.1
+pep8-naming==0.10.0
 pip==9.0.1
 pytest-cov==2.5.1
 pytest-runner==2.11.1
