@@ -13,6 +13,6 @@ pytest-runner==2.11.1
 pytest==3.1.2
 PyYAML==3.12
 Sphinx==1.6.3
-tox==2.7.0
+tox==3.14.6
 watchdog==0.8.3
 wheel==0.29.0
